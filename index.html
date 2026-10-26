@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bright Box Scoop</title>
+<style>
+body{margin:0;font-family:Arial,sans-serif;background:#fff7fb;color:#38283b;text-align:center}
+header{background:#f5d9e8;padding:24px 12px}
+h1{font-size:30px;margin:8px}
+.hero{padding:35px 15px}
+.products{display:flex;flex-wrap:wrap;justify-content:center;gap:16px;padding:15px}
+.card{background:white;border-radius:18px;padding:22px 15px;width:250px;max-width:75%;box-shadow:0 3px 14px #e8d6e2}
+.price{font-size:25px;font-weight:bold;color:#a43d75}
+button{background:#a43d75;color:white;border:0;padding:12px 20px;border-radius:25px;font-size:15px}
+footer{padding:25px;background:#f5d9e8;margin-top:25px}
+</style>
+</head>
+<body>
+<header>
+<h1>🎀 Bright Box Scoop</h1>
+<p>A Little Box Full of Happiness ✨</p>
+</header>
+<section class="hero">
+<h2>Unbox Your Happiness!</h2>
+<p>Discover your perfect scoop of surprises.</p>
+</section>
+<div class="products">
+<div class="card">
+<h2>Small Scoop 🎁</h2>
+<p>6+ Products</p>
+<p class="price">₹900</p>
+<p>Shipping Included</p>
+<button onclick="order('Small Scoop',900)">Order Now</button>
+</div>
+<div class="card">
+<h2>Luxe Scoop 💗</h2>
+<p>12+ Premium Products</p>
+<p>Free Makeup Vanity + 2 Freebies</p>
+<p class="price">₹2,100</p>
+<p>Shipping Included</p>
+<button onclick="order('Luxe Scoop',2100)">Order Now</button>
+</div>
+<div class="card">
+<h2>Ultra Premium ✨</h2>
+<p>13+ Premium Items</p>
+<p>Premium Suitcase Vanity</p>
+<p class="price">₹3,000</p>
+<button onclick="order('Ultra Premium',3000)">Order Now</button>
+</div>
+</div>
+<footer>
+<p>Made with 💗 by Bright Box Scoop</p>
+<p>Contact us to place your order.</p>
+</footer>
+<script>
+function order(product,price){
+alert("You selected "+product+" for ₹"+price+". Please contact Bright Box Scoop to complete your order.");
+}
+</script>
+</body>
+</html>
